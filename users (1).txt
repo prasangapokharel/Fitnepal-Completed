@@ -1,0 +1,22 @@
+===Database fitness
+
+== Table structure for table users
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|user_id|int(11)|No|
+|name|varchar(100)|No|
+|email|varchar(100)|No|
+|password|varchar(255)|No|
+|age|int(11)|No|
+|weight|decimal(5,2)|No|
+|height|int(11)|No|
+|activity|enum(&#039;normal&#039;, &#039;intermediate&#039;, &#039;highly_active&#039;)|No|
+== Dumping data for table users
+
+|1|77262|Cassandra Lopez|mybiwuvy@mailinator.com|$2y$10$8YRJ/Er64IQws8zalWg2e.hiqhMfWjVGpPzVLrenIdMN9m7.nREi.|89|18.00|35|normal
+|2|62180|Belle Peck|xyfosif@mailinator.com|$2y$10$tduoAIifpQI12.mEC2/YseHfnKvZ51yWL5EOusvFmftV.7sFhkFZq|21|100.00|1|intermediate
+|3|11787|Cody Murphy|prasanga@gmail.com|$2y$10$MY3oRnkfwUoE160D4jhoTuhYxzEQAuUm7J9Onv7AVSsrThPvOXIYO|11|68.00|93|highly_active
+|4|80453|Rhiannon Schroeder|jaya@gmail.com|$2y$10$wtDsSRNfrD4htevUIF8UDec/KehcHrHmy9lEp23MUEKDLGSAq.E06|16|15.00|70|intermediate

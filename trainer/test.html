@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            color: brown;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .column {
+            flex: 1;
+            margin: 10px;
+        }
+        .product {
+            border-radius: 8px;
+            
+            border: 1px solid brown;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 400px;
+            max-height: 200px;
+            margin-bottom: 5px;
+            border: 2px ;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="font-size: 20px; text-align: center; color: brown;">
+        Shop our products at reasonable prices 
+    </p>
+    <div class="container">
+        <div class="column">
+            <div class="product">
+                <img src="https://www.rarebeauty.com/cdn/shop/files/hp-hero-6-large-puffy-toiletry-bag-mauve-hp-slider-1210x1566_720x.gif?v=1709949895" alt="Product 1">
+                <p>Product 1</p>
+            </div>
+            <div class="product">
+                <img src="https://cdn.shopify.com/s/files/1/0314/1143/7703/files/find-comfort-body-hair-fragrance-mist-closed-1440x1952_360x.jpg?v=1701819121" alt="Product 2">
+                <p>Product 2</p>
+            </div>
+            <div class="product">
+                <img src="https://cdn.shopify.com/s/files/1/0314/1143/7703/files/find-comfort-body-hair-fragrance-mist-closed-1440x1952_360x.jpg?v=1701819121" alt="Product 3">
+                <p>Product 3</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="product">
+                <img src="https://cdn.shopify.com/s/files/1/0314/1143/7703/files/find-comfort-body-hair-fragrance-mist-closed-1440x1952_360x.jpg?v=1701819121" alt="Product 4">
+                <p>Product 4</p>
+            </div>
+            <div class="product">
+                <img src="https://cdn.shopify.com/s/files/1/0314/1143/7703/files/find-comfort-body-hair-fragrance-mist-closed-1440x1952_360x.jpg?v=1701819121" alt="Product 5">
+                <p>Product 5</p>
+            </div>
+            <div class="product">
+                <img src="https://cdn.shopify.com/s/files/1/0314/1143/7703/files/find-comfort-body-hair-fragrance-mist-closed-1440x1952_360x.jpg?v=1701819121" alt="Product 6">
+                <p>Product 6</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

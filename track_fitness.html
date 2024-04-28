@@ -1,0 +1,96 @@
+<?php
+// Handle form submission
+$message = '';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Assuming you have already established a database connection
+    $pdo = new PDO("mysql:host=localhost;dbname=fitness", "username", "password");
+
+    $date = $_POST['date'];
+    $calories = $_POST['calories'];
+    $protein = $_POST['protein'];
+
+    // Perform validation if needed
+
+    // Insert data into the database
+    $sql = "INSERT INTO tracking (user_id, date, calories_consumed, protein_consumed) VALUES (?, ?, ?, ?)";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$user_id, $date, $calories, $protein]);
+
+    if ($stmt) {
+        $message = "Fitness data tracked successfully!";
+    } else {
+        $message = "Error occurred. Please try again later.";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="number"], input[type="date"], button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Fitness Tracker</h1>
+    <form method="post">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        <label for="calories">Calories Consumed:</label>
+        <input type="number" id="calories" name="calories" required><br><br>
+        <label for="protein">Protein Consumed:</label>
+        <input type="number" id="protein" name="protein" required><br><br>
+        <button type="submit">Track</button>
+    </form>
+    <div id="message"><?php echo $message; ?></div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var form = this;
+            var formData = new FormData(form);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '', true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    document.getElementById('message').textContent = xhr.responseText;
+                    form.reset();
+                } else {
+                    document.getElementById('message').textContent = 'Error occurred. Please try again later.';
+                }
+            };
+            xhr.send(formData);
+        });
+    });
+</script>
+</body>
+</html>

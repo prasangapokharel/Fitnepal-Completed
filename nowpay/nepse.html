@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepse Stock Price Tracker</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 100%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow-x: auto; /* Enable horizontal scroll for small screens */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px; /* Reduced padding for smaller screens */
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: normal;
+        }
+        td {
+            background-color: #fff;
+            color: #007bff;
+        }
+        td.status::after {
+            content: "";
+            display: inline-block;
+            width: 8px; /* Reduced size for smaller screens */
+            height: 8px; /* Reduced size for smaller screens */
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+        td.online::after {
+            background-color: green;
+        }
+        td.offline::after {
+            background-color: red;
+        }
+        td.genuine::before {
+            content: "Genuine";
+            color: green;
+            font-size: 12px;
+        }
+        .search-container {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: 100%; /* Full width for smaller screens */
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        @media screen and (max-width: 600px) {
+            th, td {
+                padding: 5px; /* Further reduced padding for very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nepse Stock Price Tracker</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for company...">
+        </div>
+        <table id="stock-table">
+            <thead>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Symbol</th>
+                    <th>Last Close Price (Rs)</th>
+                    <th>Opening Price (Rs)</th>
+                    <th>1-Day % Change</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script>
+        async function fetchStockData() {
+            try {
+                const response = await fetch('https://the-value-crew.github.io/nepse-api/data/date/latest.json');
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        async function displayStockData() {
+            const stockData = await fetchStockData();
+            const tableBody = document.querySelector('#stock-table tbody');
+            
+            for (const companyData of Object.values(stockData.data)) {
+                const { company, price } = companyData;
+                const { name, code } = company;
+                const { close, open } = price;
+                const status = isMarketOpen() ? 'online' : 'offline';
+                const genuineClass = isDataGenuine() ? 'genuine' : '';
+                const row = `
+                    <tr>
+                        <td>${name}</td>
+                        <td>${code}</td>
+                        <td>${close}</td>
+                        <td>${open}</td>
+                        <td class="status ${status}"></td>
+                    </tr>
+                `;
+                tableBody.insertAdjacentHTML('beforeend', row);
+            }
+        }
+
+        function isMarketOpen() {
+            // Logic to determine if the market is open or closed
+            const now = new Date();
+            const dayOfWeek = now.getDay(); // 0 (Sunday) to 6 (Saturday)
+            const hour = now.getHours();
+
+            // Market opens Monday to Friday (dayOfWeek 1 to 5) from 11 AM to 3 PM (hour 11 to 15)
+            return dayOfWeek >= 1 && dayOfWeek <= 5 && hour >= 11 && hour < 15;
+        }
+
+        function isDataGenuine() {
+            // Assume data is always genuine for demonstration purposes
+            return true;
+        }
+
+        displayStockData();
+
+        function searchTable() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toUpperCase();
+            const table = document.getElementById('stock-table');
+            const rows = table.getElementsByTagName('tr');
+
+            for (let i = 0; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                let found = false;
+                for (let j = 0; j < cells.length; j++) {
+                    const cell = cells[j];
+                    if (cell) {
+                        if (cell.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            found = true;
+                            break;
+                        }
+                    }
+                }
+                if (found) {
+                    rows[i].style.display = '';
+                } else {
+                    rows[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
