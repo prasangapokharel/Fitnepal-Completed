@@ -87,12 +87,12 @@ $result = $stmt->get_result();
             font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1F6FFF;
-            color: #fff;
+            background-color: #3e4684;
+                        color: #fff;
         }
 
         .navbar {
-            background-color: #1F6FFF;
+            background-color: #3e4684;
             overflow: hidden;
             text-align: right;
             padding: 30px; /* Increased height */
@@ -180,13 +180,12 @@ $result = $stmt->get_result();
             padding: 8px;
             text-align: left;
             color: #fff;
-            background-color: #1F6FFF;
-
+            background-color: #3e4684;
         }
 
         th {
-            background-color: #f2f2f2;
-            color: #333;
+            background-color: #3e4684;
+                        color: #333;
         }
 
         th:first-child, td:first-child {

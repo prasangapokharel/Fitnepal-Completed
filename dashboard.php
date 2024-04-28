@@ -318,7 +318,7 @@ $conn->close();
             padding: 20px; /* Padding within the container */
             border: 2px solid #ccc; /* Border for the container */
             border-radius: 10px; /* Rounded corners for the container */
-            background-color: #f5f5f5; /* Light gray background */
+            background-color: transparent; /* Light gray background */
         }
 
         /* Styling for individual card */
@@ -342,18 +342,20 @@ $conn->close();
         /* Styling for the card content */
         .card h1 {
             font-size: 1.5em; /* Larger font size for the title */
-            margin: 10px 0; /* Margin around the title */
+            margin: 10px 0;
+            color:#3e4684; /* Margin around the title */
         }
 
         .card .price {
             color: green; /* Color for the price text */
-            font-size: 1.2em; /* Larger font size for the price */
+            font-size: 1.2em;
+            color: #3e4684; /* Larger font size for the price */
         }
 
         .card button {
             border: none; /* No border on the button */
             padding: 10px; /* Padding within the button */
-            background-color: #4CAF50; /* Green background for the button */
+            background-color: #3e4684; /* Green background for the button */
             color: white; /* White text on the button */
             text-align: center; /* Center the text */
             font-size: 1em; /* Font size for the button */
@@ -422,26 +424,26 @@ $conn->close();
 <div class="card-container">
     <div class="card">
         <img src="https://imgs.search.brave.com/hNtL4jv1vyrukPTBAEKduhp1PNnm40OhPV29C8QW4g8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzU5/NDQyZDZiMzZlNWQz/MzdiZTVkYTExYy8x/NjAyMjAwMjg4NTMw/LVRJSFdZRDhYMlg4/NFJMUDNURUlGL01h/a2VfYWhlYWRfZGlu/bmVyX2tpdC5qcGc" alt="Denim Jeans">
-        <h1>Tailored Jeans</h1>
+        <h1>Fat loss</h1>
         <p class="price">$19.99</p>
         <p>Some text about the jeans..</p>
-        <p><button>Add to Cart</button></p>
+        <p><button>Get diet</button></p>
     </div>
 
     <div class="card">
         <img src="https://imgs.search.brave.com/83BL7L2f5NPpY935K8M0TyUCcV-hkl_MqK9fWW8yzAI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuZXBpY3VyaW91/cy5jb20vcGhvdG9z/LzYzMGFhZWQxZWJi/MWM5YmZhMDRmYjgw/NC9tYXN0ZXIvd18x/NjAwLGNfbGltaXQv/TWV0aG9kb2xvZ3kr/c2hvb3QrMDEtMDct/MjAyMS02MSsxLmpw/Zw" alt="Denim Jeans">
-        <h1>Classic Jeans</h1>
+        <h1>Muscle Gain</h1>
         <p class="price">$29.99</p>
         <p>Some more text about the jeans..</p>
-        <p><button>Add to Cart</button></p>
+        <p><button>Get diet</button></p>
     </div>
 
     <div class="card">
         <img src="https://imgs.search.brave.com/BwpI4LNI0XKSTYPLgtn4105smVQggdvk6ysAZv31VXo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuZXBpY3VyaW91/cy5jb20vcGhvdG9z/LzU5OWM0ZDFmYzdi/MzhjN2MxNzU3ZTVm/MC9tYXN0ZXIvd18x/NjAwLGNfbGltaXQv/ZGlubmVybHkuanBn" alt="Denim Jeans">
-        <h1>Trendy Jeans</h1>
+        <h1>Kito diet</h1>
         <p class="price">$39.99</p>
         <p>Even more text about the jeans..</p>
-        <p><button>Add to Cart</button></p>
+        <p><button>Get diet</button></p>
     </div>
 </div>
 <!-- hi i am prasanga -->

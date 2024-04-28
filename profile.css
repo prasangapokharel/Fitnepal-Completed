@@ -7,10 +7,10 @@ body {
             
 }
 button.prof{
-    padding: 25px 12px;
+    padding: 3px 3px;
     border: 1px;
     border-radius: 12px;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 600px;
 }
 
@@ -186,7 +186,7 @@ input[type="submit"] {
     background-color: #1255c5;
 color: #b4b8c1;
     border: none;
-    padding: 18px;
+    padding: 12px;
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
