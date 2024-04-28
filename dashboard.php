@@ -444,7 +444,7 @@ $conn->close();
         <p><button>Add to Cart</button></p>
     </div>
 </div>
-
+<!-- hi i am prasanga -->
 <script>
         // Data for the protein goal
         const proteinGoal = <?php echo $protein_intake;?>; // Set your total protein goal
