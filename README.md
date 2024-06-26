@@ -1,6 +1,9 @@
 
 # Fitnepal
-![Description of Image](./cal.png)
+![Calendar Image](./cal.png)
+![Admin Image](./adm.png)
+![Authentication Image](./aut.png)
+![Homepage Image](./hm.png)
 
 ## Setup Instructions
 
