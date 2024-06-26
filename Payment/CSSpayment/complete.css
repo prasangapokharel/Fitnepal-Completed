@@ -1,0 +1,60 @@
+/* Khalti Container Styling */
+.khalticontainer {
+    width: 400px; /* Fixed width for the form */
+    border: 2px solid #5C2D91; /* Khalti's brand color */
+    margin: 50px auto; /* Center the form horizontally with top margin */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    background-color: white; /* White background */
+    text-align: center; /* Center the content */
+}
+label{
+    text-align: left;
+}
+/* Input Field Styling */
+.input-group {
+    margin: 50px auto; /* Increase space between input groups */
+}
+
+.input-group input {
+    width: 90%; /* Full width */
+    padding: 12px; /* Increased padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+.input-group input:focus {
+    border-color: #5C2D91; /* Khalti's brand color on focus */
+}
+
+/* Button Styling */
+button {
+    padding: 12px 24px; /* Increase padding for the button */
+    background-color: #5C2D91; /* Khalti's brand color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    opacity: 0.85; /* Reduced hover effect for better visual feedback */
+}
+
+button:disabled {
+    background-color: #ddd; /* Disabled button color */
+    cursor: not-allowed; /* Cursor for disabled button */
+}
+
+/* Error/Succcess Message Styling */
+.error-message {
+    color: red; /* Error color */
+    margin-bottom: 10px; /* Space before the form */
+}
+
+.success-message {
+    color: green; /* Success color */
+    margin-bottom: 10px; /* Space before the form */
+}

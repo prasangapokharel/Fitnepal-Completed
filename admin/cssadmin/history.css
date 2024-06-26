@@ -1,0 +1,63 @@
+/* File: cssadmin/history.css */
+
+/* General settings for the body */
+body {
+    font-family: 'Inter', sans-serif; /* Inter font */
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Ensure it stays fixed on scroll */
+    color: #000000; /* Dark text */
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    border-radius: 10px; /* Rounded corners for smoothness */
+    padding: 20px;
+    margin-top: 2%;
+    margin-left: 15%;
+
+}
+
+/* Content area with proper margin and padding */
+.content {
+    flex-grow: 1; /* Allow content to grow */
+    padding: 20px;
+    /* Padding around content */
+}
+/* Styling for the table to display data */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse table borders */
+    background-color: transparent; /* Dark blue background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+/* Styling for table headers */
+th {
+    background-color: white; /* White background */
+    color: #124c8e; /* Blue text */
+    padding: 15px; /* Padding for spacing */
+    text-align: left; /* Align text to the left */
+    text-transform: uppercase; /* Uppercase text */
+    border-bottom: 2px solid #4e4e4e; /* Border for separation */
+}
+
+/* Styling for table rows */
+td {
+    padding: 15px; /* Padding for spacing */
+    border-bottom: 1px solid #4e4e4e; /* Border for separation */
+}
+
+/* Alternate row background for better readability */
+tr:nth-child(even) {
+    background-color: #f1f1f1; /* Light gray for alternate rows */
+}
+
+/* Styling for the page title */
+h1 {
+    font-size: 24px;
+    color: #124c8e; /* Blue text */
+}

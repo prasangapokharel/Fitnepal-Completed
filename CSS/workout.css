@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Ensure it stays fixed on scroll */
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    max-width: 800px;
+    width: 90%;
+    padding: 2rem;
+    background-color: #1E3A8A;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    margin: 2rem auto;
+}
+
+main article {
+    padding: 1rem 0;
+    margin: 0 0 3rem 0;
+}
+
+h2 {
+    margin: 0 0 0.5rem 0;
+    color: #60A5FA; /* Accent color */
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    color: #fff;
+    border-collapse: collapse;
+}
+
+td, th {
+    vertical-align: top;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px 3px;
+}
+
+tr th:first-of-type, tr td:first-of-type {
+    padding-left: 0;
+}
+
+tr:hover td {
+    background-color: #1F6FFF;
+}
+
+td:last-of-type {
+    padding-right: 0;
+}
+
+tr:last-of-type td {
+    border: 0;
+    border-top: 2px solid #ffffff;
+    font-weight: bold;
+}
+
+.tr {
+    text-align: right;
+    padding-right: 0;
+}
+
+th {
+    font-size: large;
+}
+
+form {
+    margin: 0 0 2rem 0;
+    padding: 0 0 1rem 0;
+    border-bottom: 2px solid #eee;
+    text-align: center;
+}
+
+input[type=text],
+input[type=date] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    height: 40px;
+    width: 20%;
+    margin: 5px;
+    color: #1E3A8A;
+    background-color: #f9f9f9;
+}
+
+input::placeholder {
+    color: #888;
+    opacity: 0.6;
+}
+
+input[type=text]:focus,
+input[type=date]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(31, 111, 255, 0.3);
+}
+
+input[type=submit] {
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #60A5FA;
+    color: #fff;
+    border: none;
+    margin: 6px;
+    transition: all 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #1F6FFF;
+}
+
+small,
+small * {
+    font-size: x-small;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        width: 95%;
+        margin: 1rem 2.5%;
+    }
+}

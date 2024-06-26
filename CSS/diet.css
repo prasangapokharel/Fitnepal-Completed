@@ -1,0 +1,116 @@
+/* Body and container styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Ensure it stays fixed on scroll */
+    color: #fff;
+}
+
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for category selection */
+.category-select {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-select label {
+    color: #ffffff; /* White text for label */
+}
+
+.category-select select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3b82f6;
+    background-color: #124c8e;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Styling for meal sections */
+.meal-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Make sure it wraps on smaller screens */
+}
+
+/* Styling for each meal column */
+.meal-column {
+    background-color: #1e2a47;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px; /* Minimum width to ensure better layout on smaller screens */
+}
+
+/* Heading style for meal columns */
+.meal-column h2 {
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for diet cards within each column */
+.diet-card {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: transparent; /* Background color for diet cards */
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.diet-card:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for images within diet cards */
+.diet-card img {
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Styling for text within diet cards */
+.diet-card h3 {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.diet-card p {
+    margin: 5px 0;
+    color: #b0c4de;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .meal-sections {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .meal-column {
+        margin-bottom: 20px;
+    }
+}

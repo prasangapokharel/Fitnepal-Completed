@@ -1,0 +1,128 @@
+    /* Overall style for the page */
+    body {
+        background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+        background-size: cover; /* Ensure the background covers the entire area */
+        background-repeat: no-repeat; /* Prevent repeating */
+        background-attachment: fixed; 
+        font-family: 'Inter', sans-serif; /* Font */
+        margin: 0px;
+    padding: 0px;
+
+    }
+    .dt{
+        color: red;
+        padding: 12px 19px;
+        background-color: #f7f7f7;
+        font-weight: bolder;
+    }
+    .dtb{
+        background-color: #ffffff;
+    }
+    
+    /* Container for the main content */
+    .container {
+        padding: 20px; /* Consistent padding */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Vertical arrangement */
+        justify-content: flex-start; /* Align content at the top */
+        align-items: center; /* Center content horizontally */
+        height: 100vh;
+        margin-left: 12%;
+    }
+    
+    /* Heading for the section */
+    h1 {
+        color: #124c8e; /* Heading color */
+        font-weight: 600; /* Bold font */
+    }
+    label{
+        color: white;
+    }
+    
+    /* Form styling for adding new diet items */
+    form {
+        background:transparent;
+        padding: 20px 20px; /* Padding */
+        border-radius: 10px; /* Rounded corners */
+        width: 90%; /* Fixed width */
+        margin-bottom: 20px; /* Margin at the bottom */
+    }
+    
+    label {
+        display: block; /* Block layout */
+        font-weight: 600; /* Bold label */
+        margin-bottom: 8px; /* Space between label and input */
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select {
+        padding: 10px; /* Padding */
+        border: 1px solid #ccc; /* Border */
+        border-radius: 5px; /* Rounded corners */
+        width: 100%; /* Full width */
+        margin-bottom: 10px; /* Space between inputs */
+    }
+    
+    button {
+        background-color: #ffffff; /* Button background */
+        color: #124c8e; /* Text color */
+        padding: 10px 20px; /* Padding */
+        border: none; /* No border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    
+    /* Hover effect for buttons */
+    button:hover {
+        background-color: #4570a1; /* Change color on hover */
+    }
+    
+    /* Alert message styling */
+    .alert {
+        background-color: #f39c12; /* Warning color */
+        color: white; /* Text color */
+        padding: 10px; /* Padding */
+        border-radius: 5px; /* Rounded corners */
+        text-align: center; /* Centered text */
+        margin-bottom: 20px; /* Space below */
+    }
+    
+    /* Table styling */
+    table {
+        width: 93%; /* Full width */
+        border-collapse: collapse; /* Collapse borders */
+        background-color: white; /* Background color */
+        border-radius: 10px; /* Rounded corners */
+        overflow: hidden; 
+        padding: 2% 5%;/* Prevent overflow */
+        margin: 2% 2%;
+    }
+    
+    th {
+        background-color: #124c8e; /* Dark background */
+        color: white; /* Light text */
+        padding: 10px; /* Padding */
+        text-align: left; /* Align left */
+        border-bottom: 0px solid #4e4e4e; /* Border separation */
+    }
+    
+    td {
+        padding: 10px; /* Padding */
+        border-bottom: 1px solid #4e4e4e; /* Border separation */
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f7f7f7; /* Lighter background for alternate rows */
+    }
+    
+    /* Image styling */
+    img {
+        border-radius: 50%; /* Circular images */
+        width: 50px; /* Fixed width */
+        height: 50px; /* Fixed height */
+    }
+    
+    

@@ -1,0 +1,84 @@
+body {
+    background-color: #124c8e; /* Dark background for cards */
+    color: #f0f0f0; /* Light text */
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Side-by-side layout */
+    justify-content: space-between; /* Even spacing */
+    align-items: flex-start; /* Align at the top */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #124c8e; /* Dark background for cards */
+    max-width: 100%; /* Restrict width */
+    margin: 50px 15%; /* Center the container */
+}
+
+.profile-section {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Vertical layout */
+    align-items: center; /* Center horizontally */
+}
+
+.profile-image {
+    border-radius: 50%; /* Circular shape */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensure image fits */
+}
+
+.status-dot {
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Circular shape */
+    background-color: red; /* Default color */
+    margin-top: 10px; /* Space above the dot */
+}
+
+.status-dot.active {
+    background-color: #1cc01c; /* Green for active status */
+}
+
+.divider {
+    border-left: 1px solid #ccc; /* Divider line */
+    height: 100%; /* Full height */
+    margin: 20px; /* Space between sections */
+}
+
+.info-section {
+    margin-top: 170px;
+    flex: 1; /* Allow the section to grow */
+    padding: 20px; /* Padding inside the section */
+}
+
+.input-group {
+    margin-bottom: 16px; /* Space between input groups */
+}
+
+input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+input:focus {
+    border-color: #007bff; /* Blue border on focus */
+}
+
+.submit-button {
+    background-color: #071b2f; /* Darker blue on hover */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    transition: background-color 0.3s; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.submit-button:hover {
+    background-color: #6e91b4; /* Darker blue on hover */
+}

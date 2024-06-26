@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    background-color: rgba(30, 58, 138, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #60A5FA;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: none;
+    display: none;
+}
+
+fieldset.show {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-wrapper .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #888;
+}
+
+.input-wrapper .icon-left {
+    left: 12px;
+}
+
+.input-wrapper .icon-right {
+    right: 12px;
+    cursor: pointer;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 12px 12px 36px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #1E3A8A;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+input[type="password"] {
+    padding-right: 36px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(31, 111, 255, 0.3);
+}
+
+input[type="button"], input[type="submit"] {
+    background-color: #60A5FA;
+    color: #fff;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover {
+    background-color: #1F6FFF;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.register-link a {
+    color: #60A5FA;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+input::placeholder {
+    opacity: 0.6;
+    color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input, select {
+        padding: 12px 36px 12px 36px;
+    }
+
+    input[type="button"], input[type="submit"] {
+        padding: 12px 16px;
+    }
+}

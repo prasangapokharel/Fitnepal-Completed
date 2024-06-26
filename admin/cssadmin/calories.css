@@ -1,0 +1,105 @@
+/* Body styling */
+body {
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Ensure it stays fixed on scroll */
+    color: #f0f0f0; /* Light text */
+    font-family: 'Inter', sans-serif; /* Modern font */
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Flexbox container with futuristic colors */
+.container {
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 1% 15%;
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+    background: transparent;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+/* Table headers */
+th {
+    background-color: white; 
+    color: #124c8e;
+    padding: 15px;
+    text-align: left; 
+    text-transform: uppercase; 
+    border-bottom: 2px solid #4e4e4e;
+}
+
+/* Table rows */
+td {
+    padding: 15px; 
+    border-bottom: 1px solid #4e4e4e; 
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: green; /* Change background on hover */
+}
+
+/* Styling for modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #124c8e; 
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: center;
+    width: 60%; 
+}
+
+/* Close button */
+.close-button {
+    background-color: #f44336; /* Red */
+    color: white; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 18px; 
+    float: right;
+    padding: 10px;
+}
+
+/* Additional styling for modal content */
+.modal-content h3 {
+    margin-top: 0;
+    color: white; 
+}
+
+/* Hover effect for close button */
+.close-button:hover {
+    background-color: #e53935; 
+}
+
+/* Additional styling for modal content */
+.modal-content h3 {
+    margin-top: 0;
+    color: white; 
+}
+
+/* Hover effect for close button */
+.close-button:hover {
+    background-color: #e53935; 
+}

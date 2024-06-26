@@ -1,0 +1,83 @@
+/* Body styling */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flexbox container with futuristic colors */
+.container {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 5%;
+}
+
+/* Content area with proper margin and padding */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Styling for the table to display data */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9fcff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Styling for table headers */
+th {
+    background-color: white;
+    color: #124c8e;
+    padding: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4e4e4e;
+}
+
+/* Styling for table rows */
+td {
+    padding: 15px;
+    border-bottom: 1px solid #4e4e4e;
+}
+
+/* Alternate row background for better readability */
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #124c8e;
+    color: #ffffff;
+}
+
+/* Styling for action buttons */
+button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+/* Specific styles for verified and unverified buttons */
+button[name="action"][value="verified"] {
+    background-color: #124c8e;
+    color: white;
+}
+
+button[name="action"][value="unverified"] {
+    background-color: red;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}

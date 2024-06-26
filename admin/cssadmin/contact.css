@@ -1,0 +1,91 @@
+/* Futuristic styling for the page */
+body {
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    color: #f0f0f0; /* Light text */
+    font-family: 'Inter', sans-serif; /* Modern font */
+}
+
+.container {
+    display: flex;
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    border-radius: 10px; /* Rounded corners for smoothness */
+    padding: 20px;
+    
+
+}
+
+/* Content area */
+.content {
+    flex-grow: 1; /* Allow content to grow */
+    /* padding: 20px;
+    margin-top: 1%;
+    margin-left: 12%; */
+}
+
+/* Styling for the table */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse table borders */
+    background-color: transparent; /* Dark background for cards */
+    color:#ffffff; /* Dark table background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+/* Styling for table headers */
+th {
+    background-color: #ffffff; /* Dark background for cards */
+    color: #124c8e; /* Light text */
+    padding: 15px; /* Padding */
+    text-align: left; /* Align text to the left */
+    text-transform: uppercase; /* Uppercase text */
+    border-bottom: 2px solid #4e4e4e; /* Border for separation */
+}
+
+/* Styling for table rows */
+td {
+    padding: 15px; /* Padding */
+    border-bottom: 1px solid #4e4e4e; /* Border at the bottom */
+}
+
+/* Alternate row background for readability */
+tr:nth-child(even) {
+    background-color: #3d5a7b; /* Dark background for cards */
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #6586ab; /* Green */
+}
+
+/* Action buttons with hover effects */
+.action-button {
+    background-color: #7094bc; /* Green */
+
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Edit and delete button styles */
+.edit-button {
+    background-color: #4CAF50; /* Green */
+    color: white; /* White text */
+}
+
+.edit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.pending-button {
+    background-color: #124c8e; /* Dark background for cards */
+    color: rgb(255, 255, 255); /* White text */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.pending-button:hover {
+    background-color: #124c8e; /* Dark background for cards */
+}

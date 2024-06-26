@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(30, 58, 138, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    color: #60A5FA;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-wrapper .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    color: #888;
+    font-size: 16px;
+}
+
+.input-wrapper .icon-right {
+    position: absolute;
+    cursor: pointer;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+input {
+    width: 100%;
+    padding: 12px 12px 12px 36px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #1E3A8A;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="password"] {
+    padding-right: 36px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(31, 111, 255, 0.3);
+}
+
+.log {
+    background-color: #60A5FA;
+    color: #fff;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.log:hover {
+    background-color: #1F6FFF;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.register-link a {
+    color: #60A5FA;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+input::placeholder {
+    opacity: 0.6;
+    color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input {
+        padding: 12px 36px 12px 36px;
+    }
+
+    .log {
+        padding: 12px 16px;
+    }
+}

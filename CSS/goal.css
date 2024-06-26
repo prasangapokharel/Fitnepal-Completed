@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #60A5FA;
+    color: #fff; /* Setting default text color */
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #1E3A8A;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    color: #fff; /* Ensuring text color matches the body */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #F0F6FC;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #1E3A8A; /* Dark text color for input fields */
+}
+
+input:focus {
+    outline: none;
+    border-color: #1F6FFF;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+button {
+    background-color: #60A5FA;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #fff; /* Button text color */
+}
+
+button:hover {
+    background-color: #1F6FFF; /* Adjusting button color on hover */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: collapse; /* Ensuring table borders collapse */
+}
+
+th,
+td {
+    border: 1px solid #60A5FA; /* Adding borders to table cells */
+    padding: 14px;
+    text-align: left;
+    background-color: #ffffff;
+    color: #1E3A8A; /* Dark text color for table cells */
+    cursor: pointer; /* Changing cursor style for table entries */
+}
+
+th {
+    background-color: #60A5FA;
+    color: #fff;
+    box-shadow: none;
+}
+
+.popup-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    animation: popup 0.5s ease-out, firebox 1s infinite;
+    color: #1E3A8A; /* Dark text color for popup message */
+}
+
+@keyframes firebox {
+    /* Animation keyframes remain unchanged */
+}
+
+@keyframes popup {
+    /* Animation keyframes remain unchanged */
+}

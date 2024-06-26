@@ -1,0 +1,129 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8; /* Light background color for better readability */
+    color: #333; /* Dark text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Container styling */
+.container {
+    max-width: 90%; /* Restrict width */
+    margin: 20px auto; /* Center with margin */
+    padding: 20px; /* Add padding */
+    border: 1px solid #d1d5db; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column; /* Flex direction for vertical layout */
+    align-items: center; /* Center align items */
+}
+
+/* Fixed public account information section */
+.public-account {
+    text-align: center; /* Center text */
+    width: 100%; /* Full width */
+}
+
+.public-account h2 {
+    color: #1e3a8a; /* Dark blue heading */
+    font-weight: 700; /* Bold font */
+}
+
+.account-details p {
+    font-size: 14px; /* Smaller text for account details */
+    color: #555; /* Slightly lighter text color */
+}
+
+/* User input section */
+.user-input {
+    margin-top: 20px; /* Add space between sections */
+    width: 100%; /* Full width */
+}
+
+.user-input h3 {
+    color: #1e3a8a; /* Dark blue heading */
+    font-weight: 600; /* Semi-bold font */
+}
+
+/* Styling for form elements */
+form {
+    display: flex;
+    flex-direction: column; /* Flex direction for vertical layout */
+    width: 100%; /* Full width */
+}
+
+label {
+    margin-bottom: 5px; /* Space between label and input */
+    color: #333; /* Dark text color */
+    font-size: 14px; /* Standard font size */
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding */
+    border: 1px solid #d1d5db; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space between inputs */
+    font-size: 16px; /* Larger font size for better readability */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+    border-color: #1e3a8a; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Custom styling for file input */
+input[type="file"] {
+    padding: 0; /* Remove default padding */
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #378ce7; /* Theme blue */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition on hover */
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #1e6fbb; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Purchase button styling */
+.purchase-button {
+    background-color: #378ce7; /* Theme blue */
+    color: #ffffff; /* White text */
+    padding: 12px 30px; /* Add padding */
+    font-size: 16px; /* Larger font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition on hover */
+    align-self: center; /* Center the button */
+}
+
+.purchase-button:hover {
+    background-color: #1e6fbb; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .purchase-button {
+        width: 100%; /* Full width button on mobile */
+        text-align: center; /* Center text */
+    }
+}

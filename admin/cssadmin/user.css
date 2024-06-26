@@ -1,0 +1,185 @@
+/* Body styling */
+body {
+    background-color: #ffffff; /* Dark background for cards */
+    color: #124c8e; /* Light text for contrast */
+    font-family: 'Inter', sans-serif; /* Modern font */
+    margin: 0px;
+    Padding: 0px;
+}
+
+/* Flexbox container with futuristic colors */
+.container {
+    display: flex;
+    background-color: #ffffff; /* Dark background for cards */
+    border-radius: 10px; /* Rounded corners for smoothness */
+    padding: 20px;
+    margin-top: 0%;
+    margin: 0px 5%;
+
+}
+.export-button-container{
+    margin: 30px auto;
+
+}
+.csv{
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+border: 0px;
+text-decoration: none;
+    padding: 9px 12px;
+    color: rgb(255, 255, 255);
+}
+.next{
+    display: none;
+}
+
+/* Content area with proper margin and padding */
+.content {
+    flex-grow: 1; /* Allow content to grow */
+    padding: 20px;
+    /* Padding around content */
+}
+
+/* Styling for the table to display data */
+table {
+    width: 90%; /* Full width */
+    border-collapse: collapse; /* Collapse table borders */
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+/* Styling for table headers */
+th {
+    background-color: white; /* Slightly darker background */
+    color: #124c8e; /* Light text */
+    padding: 15px; /* Padding for spacing */
+    text-align: left; /* Align text to the left */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    border-bottom: 2px solid #4e4e4e; /* Border for separation */
+}
+
+/* Styling for table rows */
+td {
+    padding: 15px; /* Padding for spacing */
+    border-bottom: 1px solid #4e4e4e; /* Border for separation */
+}
+
+/* Alternate row background for better readability */
+tr:nth-child(even) {
+    background-color: #ffffff; /* Dark background for cards */
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #124c8e; /* Slightly darker background */
+    color: #ffffff; /* Change background on hover */
+}
+
+/* Styling for action buttons */
+.action-button {
+    
+    padding: 10px 20px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners for smoothness */
+    font-size: 14px; /* Font size for readability */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Specific styles for edit and delete buttons */
+.edit-button {
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    color: white; /* White text for contrast */
+}
+
+.edit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.delete-button {
+    background-color: #f44336; /* Red for delete */
+    color: white; /* White text for contrast */
+}
+
+.delete-button:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+/* Modal styling with futuristic design */
+.modal {
+    max-width: 60%;
+
+    margin: 30px 11%;
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position for modal */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: transparent; /* Semi-transparent black */
+    justify-content: center; /* Center the modal horizontally */
+    align-items: center; /* Center the modal vertically */
+    z-index: 1002; /* Ensure it's above other content */
+}
+.modal-window{
+    margin-bottom: 20px;
+    max-width: 70%;
+
+}
+
+/* Modal content with padding and rounded corners */
+.modal-content {
+    margin-left: 300px;
+    color: whitesmoke;
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    padding: 20px; /* Padding inside the modal */
+    border-radius: 10px; /* Rounded corners */
+    text-align: left; /* Center-align text */
+}
+
+/* Close button styling for modal */
+.close-button {
+    background-color: #f44336; /* Red for close button */
+    color: white; /* White text */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; 
+    font-size: 20px;
+    font-weight: 600;
+    float: right;/* Pointer cursor */
+}
+
+/* Styling for input groups */
+.input-group {
+    margin-bottom: 16px; /* Spacing between input groups */
+}
+
+/* Input styling with padding and rounded corners */
+input {
+    width: 80%; /* Full width */
+    padding: 10px; /* Padding for comfort */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Focus style for input fields */
+input:focus {
+    border-color: #007bff; /* Blue border on focus */
+}
+
+/* Label styling */
+label {
+    display: block; /* Display on separate lines */
+    margin-bottom: 8px; /* Space between label and input */
+}
+.usr {
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: none; /* Blue background */
+    color: #007bff; /* White text */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; 
+    float: right;
+    display: flex;
+    margin: 20px;
+    }

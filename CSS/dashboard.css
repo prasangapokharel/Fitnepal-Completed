@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Ensure it stays fixed on scroll */
+    color: grey;
+}
+
+.container {
+    max-width: 80%;
+    margin: 90px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content p {
+    margin-bottom: 10px;
+    padding: 12px;
+    background-color: #f0f8ff;
+    color: #1E3A8A;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    border-radius: 0.5rem;
+}
+
+.content p span {
+    font-weight: bold;
+}
+
+#chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.styled-button {
+    padding: 12px 24px;
+    background-color: #378CE7;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.styled-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.styled-button:hover {
+    background-color: #60A5FA;
+}
+
+.video {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.video h2 {
+    color: #fff;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1E3A8A;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+}
+
+.card iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 12px 0;
+    color: #ffffff;
+}
+
+.card p {
+    color: #378CE7;
+}
+
+.upgrade-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 40px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upgrade-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #378CE7;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.upgrade-button:hover {
+    background-color: #60A5FA;
+}
+
+canvas#proteinGoalChart {
+    height: 290px; /* Adjusted height */
+    width: 290px; /* Adjusted width */
+    margin: 0 auto; /* Center the chart */
+}

@@ -1,0 +1,154 @@
+/* Dark background with orange text and Inter font */
+body {
+    background-color: #ffffff; /* Dark background for cards */
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+    Padding: 0px;
+
+}
+
+.container {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Vertical layout */
+    align-items: center; /* Center content */
+    justify-content: flex-start; /* Align content at the top */
+     
+    /* margin-left: 6%; */
+    margin-top: 2%;
+    overflow: hidden;
+
+    /* Full screen height */
+}
+
+/* Content area with consistent padding */
+.content {
+    flex-grow: 1; /* Allow content to grow */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Vertical arrangement */
+    align-items: center; /* Center items */
+    /* padding: 20px; */
+    margin-top: 50px ; /* Uniform padding */
+    width: 90%;
+     /* Use full width */
+}
+
+/* Content row for five cards with increased gaps */
+.content-row {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Even space between cards */
+    align-items: stretch; /* Stretch to equal heights */
+    gap: 30px; /* Increased gap */
+    width: 90%; /* Full width */
+    /* padding: 20px;  */
+}
+
+/* Information card styling with icons and consistent height */
+.info-box {
+    background: linear-gradient(135deg, #395f8c, #0f1a39);
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    flex: 1; /* Allow flex growth */
+    padding: 20px; /* Consistent padding */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    height: 200px; /* Fixed height for uniformity */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Vertical arrangement */
+    justify-content: center; /* Center content vertically */
+}
+
+/* Hover effect for information boxes */
+.info-box:hover {
+    background-color: green; /* Darker on hover */
+}
+
+/* Icon styling */
+.icon {
+    font-size: 24px; /* Size for the icon */
+    color: #ffcc00; /* Orange color */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+/* Logout button styling with consistent placement */
+.logout-button {
+    padding: 10px 20px; /* Padding */
+    background-color: #124c8e; /* Dark background for cards */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect for the logout button */
+.logout-button:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+/* Add this to your existing CSS file (dashboard.css) */
+
+.bar-graph {
+    float: left;
+    width: 80%;
+    margin: 40px 5%;
+    background-color: #ffffff;
+    color: #291f69; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the chart */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.bar-graph:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+
+
+.profile-container {
+    position: absolute;
+    top: 22px;
+    right: 125px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 26px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    z-index: 1;
+    min-width: 150px; /* Ensure the menu is wide enough */
+}
+
+.dropdown-menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.profile-container:hover .dropdown-menu {
+    display: block;
+}

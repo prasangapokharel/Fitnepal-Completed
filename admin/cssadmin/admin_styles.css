@@ -1,0 +1,95 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A);
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Ensure it stays fixed on scroll */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 80%;
+    margin-top: 20px ;
+    margin-left: 15%;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #124c8e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    color: #f2f2f2;
+    background-color: transparent;
+}
+
+table tbody tr:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+/* Search bar styling */
+.search-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    transition: border-color 0.3s;
+}
+
+.search-container input[type="text"]:focus {
+    outline: none;
+    border-color: #5C2D91;
+}
+
+/* Hover effect */
+table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .search-container {
+        text-align: left;
+    }
+
+    .search-container input[type="text"] {
+        width: 100%;
+        max-width: 300px;
+    }
+}
