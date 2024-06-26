@@ -1,5 +1,6 @@
 
 # Fitnepal
+![Description of Image](./cal.png)
 
 ## Setup Instructions
 
