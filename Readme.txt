@@ -1,50 +1,50 @@
-composer download link: https://getcomposer.org/Composer-Setup.exe
 
+# Fitnepal
 
+## Setup Instructions
 
+Follow these steps to set up the project on your local machine:
 
+### Step 1: Create Folder in htdocs
+1. Navigate to the `htdocs` directory of your local web server (e.g., XAMPP).
+2. Create a new folder for the project.
 
+### Step 2: Open the Folder in VS Code
+1. Open Visual Studio Code (VS Code).
+2. Select `File > Open Folder` and choose the folder you created in Step 1.
 
-Fit Nepal
-incpractical@gmail.com
-Manage api keys
-Test secret key
-test_secret_key_7da14cd84ffe4be2b188ba28c84cb52f
-Update
-Test public key
-test_public_key_09903c0b42f0481e9f450aab5b14300b
-Update
-Live keys will be available only after the successful test of a wallet transaction.
+### Step 3: Open Terminal in VS Code
+1. In VS Code, open the terminal by selecting `Terminal > New Terminal`.
 
- // JavaScript to handle hover effects
-    document.addEventListener('DOMContentLoaded', function() {
-            var telegramPopup = document.getElementById('telegram-popup');
+### Step 4: Clone the Repository
+1. In the terminal, run the following command to clone the repository:
+   ```sh
+   git clone https://github.com/prasangapokharel/Fitnepal-Completed.git
+   ```
 
-            telegramPopup.addEventListener('mouseover', function() {
-                telegramPopup.classList.add('animate__animated', 'animate__pulse');
-            });
+### Step 5: Open PhpMyAdmin
+1. Open your web browser and go to [PhpMyAdmin](http://localhost/phpmyadmin/).
 
-            telegramPopup.addEventListener('mouseleave', function() {
-                telegramPopup.classList.remove('animate__animated', 'animate__pulse');
-            });
+### Step 6: Create Database
+1. In PhpMyAdmin, create a new database named `fitness`.
 
-            telegramPopup.addEventListener('click', function() {
-                window.open('https://t.me/YourTelegramChannel', '_blank');
-            });
-        });
+### Step 7: Import Database
+1. Select the `fitness` database.
+2. Click on the `Import` tab.
+3. Choose the `fitness.sql` file from the cloned repository and import it.
 
-        function openModal() {
-            document.getElementById("myModal").style.display = "flex"; // Show the modal
-        }
+### Step 8: Done Successfully
+1. Open your web browser and go to the following URL to access the application:
+   ```sh
+   http://localhost/foldername/home/index.php
+   ```
+   Replace `foldername` with the name of the folder you created in Step 1.
 
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none"; // Hide the modal
-        }
+## Troubleshooting
+If you encounter any issues, please make sure you have the necessary permissions and your local server is running correctly.
 
-        // Close the modal when clicking outside the content
-        window.onclick = function(event) {
-            var modal = document.getElementById("myModal");
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+- Thanks to everyone who contributed to this project.
